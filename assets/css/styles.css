@@ -1,8 +1,163 @@
 
-body {
-    background-color:#FBF2EF;
-}
-h1 { 
+/* ----------------------- RESET ------------------ */
+/**
+ * Box sizing rules
+ * https://developer.mozilla.org/es/docs/Web/CSS/box-sizing
+ */
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+ 
+ /* Remove default padding */
+ ul,
+ ol {
+   padding: 0;
+ }
+ 
+ /* Remove default margin */
+ body,
+ h1,
+ h2,
+ h3,
+ h4,
+ p,
+ ul,
+ ol,
+ li,
+ figure,
+ figcaption,
+ blockquote,
+ dl,
+ dd {
+   margin: 0;
+ }
+ 
+ /* Set core body defaults */
+ body {
+   min-height: 100vh;
+   scroll-behavior: smooth;
+   text-rendering: optimizeSpeed;
+   line-height: 1.5;
+ }
+ 
+ /* Remove list styles on ul, ol elements with a class attribute */
+ ul,
+ ol {
+   list-style: none;
+ }
+ 
+ /* A elements that don't have a class get default styles */
+ a:not([class]) {
+   text-decoration-skip-ink: auto;
+ }
+ 
+ /* Make images easier to work with */
+ img {
+   max-width: 100%;
+   display: block;
+ }
+ 
+ /* Natural flow and rhythm in articles by default */
+ article > * + * {
+   margin-top: 1em;
+ }
+ 
+ /* Inherit fonts for inputs and buttons */
+ input,
+ button,
+ textarea,
+ select {
+   font: inherit;
+ }
+ 
+ [role='button'],
+ input[type='submit'],
+ input[type='reset'],
+ input[type='button'],
+ button {
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+ }
+ 
+ /* Reset `button` and button-style `input` default styles */
+ input[type='submit'],
+ input[type='reset'],
+ input[type='button'],
+ button {
+   background: none;
+   border: 0;
+   color: inherit;
+   /* cursor: default; */
+   font: inherit;
+   line-height: normal;
+   overflow: visible;
+   padding: 0;
+   -webkit-appearance: button; /* for input */
+   -webkit-user-select: none; /* for button */
+   -moz-user-select: none;
+   -ms-user-select: none;
+ }
+ input::-moz-focus-inner,
+ button::-moz-focus-inner {
+   border: 0;
+   padding: 0;
+ }
+ 
+ /* Make `a` like a button */
+ [role='button'] {
+   color: inherit;
+   cursor: default;
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;
+   white-space: pre;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+ }
+ 
+ /* Remove all animations and transitions for people that prefer not to see them */
+ @media (prefers-reduced-motion: reduce) {
+   * {
+     animation-duration: 0.01ms !important;
+     animation-iteration-count: 1 !important;
+     transition-duration: 0.01ms !important;
+     scroll-behavior: auto !important;
+   }
+ }
+
+ /* ----------------------- GLOBAL ------------------ */
+
+html {
+    font-size: 62.5%; /* Base typography: 10px */
+  }
+
+  h1,
+  h2,
+  h3 { 
     font-family: 'DM SerifDisplay';
     color: #D24F2E;
+    padding: 0 0 1.6rem;
+  }
+  h1 { 
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+}
+
+body {
+    background-color:#FBF2EF;
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+    color: #393938;
+    line-height: 2.4rem;
+}
+/* ----------------------- UTILITIES ------------------ */
+.wrapper {
+    margin: 0 auto;
+    max-width: 128rem;
+    padding: 0 3.2rem;
+  }
 }
