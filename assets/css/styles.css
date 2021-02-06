@@ -139,12 +139,16 @@ html {
   h2,
   h3 { 
     font-family: 'DM SerifDisplay';
-    color: #D24F2E;
+    color: #E06343;
     padding: 0 0 1.6rem;
   }
   h1 { 
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     line-height: 3.4rem;
+}
+h2 { 
+  font-size: 2.3rem;
+  line-height: 3.2rem;
 }
 
 body {
@@ -154,10 +158,46 @@ body {
     color: #393938;
     line-height: 2.4rem;
 }
+
+.text-padding {
+  padding-bottom: 2.4rem;
+}
 /* ----------------------- UTILITIES ------------------ */
 .wrapper {
     margin: 0 auto;
     max-width: 128rem;
     padding: 0 3.2rem;
   }
+
+/* ----------------------- HEADER ------------------ */
+
+.header {
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ----------------------- NAVIGATION ------------------ */
+
+ .navigation {
+  display: none;
+}
+
+.menu-closed {
+  display: none;
+}
+
+/* ----------------------- FOOTER ------------------ */
+
+.footer {
+  background: #F17A5C;
+  height: 12rem;
+}
+
+.footer__title, h2 {
+  color:#FBF2EF;
 }
