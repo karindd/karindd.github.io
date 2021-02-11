@@ -183,7 +183,11 @@ p, p + p {
       width: 100%;
     }
 
-  .column {
+    .column {
+      width: 50%;
+    }
+
+  .column-end {
     width: 100%;
   }
 
@@ -267,12 +271,14 @@ p, p + p {
 @media (min-width: 60em) {
 }
 
+/* ----------------------- UTILITIES ------------------ */
+.row {
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+}
 
-
-
-
-
-
-
-
-/* ----------------------- END ------------------ */
+.column {
+  width: 50%;
+}
+/* ----------------------- RESPONSIVE 960px END ------------------ */
