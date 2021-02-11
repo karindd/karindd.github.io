@@ -159,7 +159,7 @@ h3 {
 }
 
 body {
-    background-color:#FBF2EF;
+    background-color:#FDF8F7;
     font-family: 'Montserrat';
     font-size: 1.6rem;
     color: #393938;
@@ -236,7 +236,7 @@ p, p + p {
 }
 
 .footer__content, .footer__title, h2 {
-  color: #FBF2EF;
+  color: #FDF8F7;
 }
 
 .footer__content {
@@ -244,19 +244,19 @@ p, p + p {
 }
 
 .footer-anchor:link { 
-  color: blue;
+  color:#FDF8F7;
 }
 
 .footer-anchor:visited { 
-  color: red;
+  color:#FDF8F7;
 }
 
 .footer-anchor:hover {
-  color: yellow;
+  color:#393938;
 }
 
 .footer-anchor:active { 
-  color: green;
+  color:#393938;
 }
 
 .footer-icon {
