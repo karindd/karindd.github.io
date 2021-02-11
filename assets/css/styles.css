@@ -231,7 +231,7 @@ p, p + p {
   background: #F17A5C;
   height: 24rem;
   padding-top: 4rem;
-  padding-bottom: 2.4rem;
+  padding-bottom: 4rem;
   margin-top: 4rem;
 }
 
@@ -263,5 +263,16 @@ p, p + p {
  width: 4.8rem;
  height: 4.8rem;
 }
+/* ----------------------- RESPONSIVE 960px ------------------ */
+@media (min-width: 60em) {
+}
+
+
+
+
+
+
+
+
 
 /* ----------------------- END ------------------ */
