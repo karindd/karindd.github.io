@@ -142,13 +142,20 @@ html {
     color: #E06343;
     padding: 0 0 1.6rem;
   }
+
   h1 { 
     font-size: 2.5rem;
     line-height: 3.4rem;
 }
+
 h2 { 
   font-size: 2.3rem;
   line-height: 3.2rem;
+}
+
+h3 { 
+  font-size: 2rem;
+  line-height: 2.8rem;
 }
 
 body {
@@ -159,14 +166,37 @@ body {
     line-height: 2.4rem;
 }
 
-.text-padding {
-  padding-bottom: 2.4rem;
+p, p + p {
+  margin-bottom: 1.6rem;
 }
+
 /* ----------------------- UTILITIES ------------------ */
 .wrapper {
     margin: 0 auto;
     max-width: 128rem;
     padding: 0 3.2rem;
+  }
+
+  .row {
+      align-items: flex-start;
+      display: flex;
+      width: 100%;
+    }
+
+  .column {
+    width: 100%;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .align-end {
+    align-items:flex-end;
+  }
+
+  .reverse {
+    flex-flow: reverse;
   }
 
 /* ----------------------- HEADER ------------------ */
@@ -190,14 +220,48 @@ body {
 .menu-closed {
   display: none;
 }
+/* ----------------------- ABOUT ------------------ */
 
+.about-svg {
+  margin: 3.2rem;
+}
 /* ----------------------- FOOTER ------------------ */
 
 .footer {
   background: #F17A5C;
-  height: 12rem;
+  height: 24rem;
+  padding-top: 4rem;
+  padding-bottom: 2.4rem;
+  margin-top: 4rem;
 }
 
-.footer__title, h2 {
-  color:#FBF2EF;
+.footer__content, .footer__title, h2 {
+  color: #FBF2EF;
 }
+
+.footer__content {
+  padding-bottom: 4rem;
+}
+
+.footer-anchor:link { 
+  color: blue;
+}
+
+.footer-anchor:visited { 
+  color: red;
+}
+
+.footer-anchor:hover {
+  color: yellow;
+}
+
+.footer-anchor:active { 
+  color: green;
+}
+
+.footer-icon {
+ width: 4.8rem;
+ height: 4.8rem;
+}
+
+/* ----------------------- END ------------------ */
