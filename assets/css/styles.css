@@ -170,6 +170,22 @@ p, p + p {
   margin-bottom: 1.6rem;
 }
 
+a:link { 
+  color:#E06343;
+}
+
+a:visited { 
+  color:#FDF8F7;
+}
+
+a:hover {
+  color:#393938;
+}
+
+.a:active { 
+  color:#393938;
+}
+
 /* ----------------------- UTILITIES ------------------ */
 .wrapper {
     margin: 0 auto;
