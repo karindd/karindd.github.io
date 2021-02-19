@@ -1,229 +1,227 @@
-
 /* ----------------------- RESET ------------------ */
 /**
  * Box sizing rules
  * https://developer.mozilla.org/es/docs/Web/CSS/box-sizing
  */
- *,
- *::before,
- *::after {
-   box-sizing: border-box;
- }
- 
- /* Remove default padding */
- ul,
- ol {
-   padding: 0;
- }
- 
- /* Remove default margin */
- body,
- h1,
- h2,
- h3,
- h4,
- p,
- ul,
- ol,
- li,
- figure,
- figcaption,
- blockquote,
- dl,
- dd {
-   margin: 0;
- }
- 
- /* Set core body defaults */
- body {
-   min-height: 100vh;
-   scroll-behavior: smooth;
-   text-rendering: optimizeSpeed;
-   line-height: 1.5;
- }
- 
- /* Remove list styles on ul, ol elements with a class attribute */
- ul,
- ol {
-   list-style: none;
- }
- 
- /* A elements that don't have a class get default styles */
- a:not([class]) {
-   text-decoration-skip-ink: auto;
- }
- 
- /* Make images easier to work with */
- img {
-   max-width: 100%;
-   display: block;
- }
- 
- /* Natural flow and rhythm in articles by default */
- article > * + * {
-   margin-top: 1em;
- }
- 
- /* Inherit fonts for inputs and buttons */
- input,
- button,
- textarea,
- select {
-   font: inherit;
- }
- 
- [role='button'],
- input[type='submit'],
- input[type='reset'],
- input[type='button'],
- button {
-   -webkit-box-sizing: content-box;
-   -moz-box-sizing: content-box;
-   box-sizing: content-box;
- }
- 
- /* Reset `button` and button-style `input` default styles */
- input[type='submit'],
- input[type='reset'],
- input[type='button'],
- button {
-   background: none;
-   border: 0;
-   color: inherit;
-   /* cursor: default; */
-   font: inherit;
-   line-height: normal;
-   overflow: visible;
-   padding: 0;
-   -webkit-appearance: button; /* for input */
-   -webkit-user-select: none; /* for button */
-   -moz-user-select: none;
-   -ms-user-select: none;
- }
- input::-moz-focus-inner,
- button::-moz-focus-inner {
-   border: 0;
-   padding: 0;
- }
- 
- /* Make `a` like a button */
- [role='button'] {
-   color: inherit;
-   cursor: default;
-   display: inline-block;
-   text-align: center;
-   text-decoration: none;
-   white-space: pre;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
- }
- 
- /* Remove all animations and transitions for people that prefer not to see them */
- @media (prefers-reduced-motion: reduce) {
-   * {
-     animation-duration: 0.01ms !important;
-     animation-iteration-count: 1 !important;
-     transition-duration: 0.01ms !important;
-     scroll-behavior: auto !important;
-   }
- }
-
- /* ----------------------- GLOBAL ------------------ */
-
-html {
-    font-size: 62.5%; /* Base typography: 10px */
-  }
-
-  h1,
-  h2,
-  h3 { 
-    font-family: 'DM SerifDisplay';
-    color: #E06343;
-    padding: 0 0 1.6rem;
-  }
-
-  h1 { 
-    font-size: 2.5rem;
-    line-height: 3.4rem;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-h2 { 
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+[role='button'],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Make `a` like a button */
+[role='button'] {
+  color: inherit;
+  cursor: default;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ----------------------- GLOBAL ------------------ */
+
+html {
+  font-size: 62.5%; /* Base typography: 10px */
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'DM SerifDisplay';
+  color: #e06343;
+  padding: 0 0 1.6rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.4rem;
+}
+
+h2 {
   font-size: 2.3rem;
   line-height: 3.2rem;
 }
 
-h3 { 
+h3 {
   font-size: 2rem;
   line-height: 2.8rem;
 }
 
 body {
-    background-color:#FDF8F7;
-    font-family: 'Montserrat';
-    font-size: 1.6rem;
-    color: #393938;
-    line-height: 2.4rem;
+  background-color: #fdf8f7;
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  color: #393938;
+  line-height: 2.4rem;
 }
 
-p, p + p {
+p,
+p + p {
   margin-bottom: 1.6rem;
 }
 
-a:link { 
-  color:#E06343;
+a:link {
+  color: #e06343;
 }
 
-a:visited { 
-  color:#E06343;
-  ;
+a:visited {
+  color: #e06343;
 }
 
 a:hover {
-  color:#393938;
+  color: #393938;
 }
 
-.a:active { 
-  color:#393938;
+.a:active {
+  color: #393938;
 }
 
 /* ----------------------- UTILITIES ------------------ */
 .wrapper {
-    margin: 0 auto;
-    max-width: 128rem;
-    padding: 0 3.2rem;
-  }
+  margin: 0 auto;
+  max-width: 128rem;
+  padding: 0 3.2rem;
+}
 
-  .flex-container {
-    display: flex;
-  }
+.flex-container {
+  display: flex;
+}
 
-  .row {
-      align-items: flex-start;
-      display: flex;
-      width: 100%;
-    }
+.row {
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+}
 
-    .column {
-      width: 50%;
-    }
+.column {
+  width: 50%;
+}
 
-  .space-between {
-    justify-content: space-between;
-  }
+.space-between {
+  justify-content: space-between;
+}
 
-  .align-end {
-    align-items:flex-end;
-  }
+.align-end {
+  align-items: flex-end;
+}
 
-  .reverse {
-    flex-flow: reverse;
-  }
+.reverse {
+  flex-flow: reverse;
+}
 
-  .hide {
-    display: none;
-  
-  }
+.hide {
+  display: none;
+}
 
 /* ----------------------- HEADER ------------------ */
 
@@ -234,13 +232,13 @@ a:hover {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: 6.4rem;
 }
 
 /* ----------------------- NAVIGATION ------------------ */
 
- .navigation {
+.navigation {
   display: none;
 }
 
@@ -255,15 +253,17 @@ a:hover {
 /* ----------------------- FOOTER ------------------ */
 
 .footer {
-  background: #F17A5C;
-  height: 24rem;
+  background: #f17a5c;
+  min-height: 24rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin-top: 4rem;
 }
 
-.footer__content, .footer__title, h2 {
-  color: #FDF8F7;
+.footer__content,
+.footer__title,
+h2 {
+  color: #fdf8f7;
 }
 
 .footer__content {
@@ -273,100 +273,104 @@ a:hover {
 .footer__icon {
   width: 4.8rem;
   height: 4.8rem;
- }
-
-.footer-anchor:link { 
-  color:#FDF8F7;
 }
 
-.footer-anchor:visited { 
-  color:#FDF8F7;
+.footer-anchor:link {
+  color: #fdf8f7;
+}
+
+.footer-anchor:visited {
+  color: #fdf8f7;
 }
 
 .footer-anchor:hover {
-  color:#393938;
+  color: #393938;
 }
 
-.footer-anchor:active { 
-  color:#393938;
+.footer-anchor:active {
+  color: #393938;
 }
 
 /* ----------------------- RESPONSIVE 960px ------------------ */
 @media (min-width: 60em) {
+  /* ----------------------- GLOBAL ------------------ */
 
-/* ----------------------- GLOBAL ------------------ */
+  h1 {
+    font-size: 5.4rem;
+    line-height: 6.7rem;
+  }
 
-h1 {
-  font-size: 5.4rem;
-  line-height: 6.7rem;
-}
+  h3 {
+    font-size: 3.2rem;
+  }
 
-h3 {
-  font-size: 3.2rem;
-}
+  body {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  /* ----------------------- UTILITIES ------------------ */
 
-body {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-}
-/* ----------------------- UTILITIES ------------------ */
+  .flex-container {
+    display: flex;
+  }
 
-.flex-container {
-  display: flex;
-}
+  .row-min {
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+  }
 
-.row-min {
-  align-items: flex-start;
-  display: flex;
-  width: 100%;
-}
+  .column-min {
+    width: 50%;
+  }
 
-.column-min {
-  width: 50%;
-}
+  .reverse-min {
+    flex-flow: reverse;
+  }
 
-.reverse-min {
-  flex-flow: reverse;
-}
+  .row-min {
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+  }
 
-.row-min {
-  align-items: flex-start;
-  display: flex;
-  width: 100%;
-}
+  .space-between {
+    justify-content: space-between;
+  }
 
-.space-between {
-  justify-content: space-between;
-}
+  .align-center {
+    align-items: center;
+  }
 
-.align-center {
-  align-items: center;
-}
+  .display {
+    display: block;
+  }
 
-.display {
-  display: block;
-}
+  .inline {
+    display: inline-block;
+  }
 
-.inline {
-  display: inline-block;
-}
+  /* ----------------------- HEADER ------------------ */
 
+  .navigation {
+    display: block;
+  }
 
-/* ----------------------- HEADER ------------------ */
+  .nav-item {
+    padding: 0 2rem;
+  }
 
-.navigation {
-  display: flex;
-  float: right;
-  width: 100%;
-}
+  .nav-item:last-child {
+    padding-right: 0;
+  }
 
-.menu-open {
-  display: none;
-}
-/* ----------------------- ABOUT ------------------ */
+  .menu-open {
+    display: none;
+  }
+  /* ----------------------- ABOUT ------------------ */
 
-.about__png {
-  margin: 0 0 0 8.8rem;
-}
+  .about__png {
+    margin: 0 0 0 8.8rem;
+  }
 }
 /* ----------------------- RESPONSIVE 960px END ------------------ */
