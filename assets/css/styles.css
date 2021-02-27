@@ -267,8 +267,7 @@ a:hover {
 }
 
 .footer__content,
-.footer__title,
-h2 {
+.footer__title {
   color: #fdf8f7;
 }
 
@@ -304,6 +303,10 @@ h2 {
   h1 {
     font-size: 5.4rem;
     line-height: 6.7rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
   }
 
   h3 {
