@@ -190,7 +190,7 @@ a:hover {
 .wrapper {
   margin: 0 auto;
   max-width: 128rem;
-  padding: 0 3.2rem;
+  padding: 0 4.8rem;
 }
 
 .flex-container {
@@ -233,6 +233,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 4.8rem;
   margin-bottom: 6.4rem;
 }
 
@@ -245,11 +246,16 @@ a:hover {
 .menu-closed {
   display: none;
 }
-/* ----------------------- ABOUT ------------------ */
+/* ----------------------- ASSETS ------------------ */
 
-.about__png {
+.illustration {
   margin: 3.2rem;
 }
+
+.arrow__svg {
+ display: none;
+}
+
 /* ----------------------- FOOTER ------------------ */
 
 .footer {
@@ -342,6 +348,11 @@ h2 {
     align-items: center;
   }
 
+  .align-start {
+    align-items: start;
+  }
+
+
   .display {
     display: block;
   }
@@ -367,10 +378,15 @@ h2 {
   .menu-open {
     display: none;
   }
-  /* ----------------------- ABOUT ------------------ */
+  /* ----------------------- ASSETS ------------------ */
 
-  .about__png {
+  .illustration {
     margin: 0 0 0 8.8rem;
+  }
+
+  .arrow__svg {
+    display: block;
+    margin: 6.4rem;
   }
 }
 /* ----------------------- RESPONSIVE 960px END ------------------ */
