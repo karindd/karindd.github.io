@@ -128,6 +128,22 @@ button::-moz-focus-inner {
   }
 }
 
+/* ----------------------- END RESET ------------------ */
+
+/* ----------------------- VARIABLES ------------------ */
+
+:root {
+  --primary-color:#F17A5C;
+  --secondary-color: #393938;
+  --primary-400:#F17A5C;
+  --space-lg:0rem;
+  --space-md:0rem;
+}
+/* ----------------------- use "space" to define vertical rythm and color palettes (any value, --whatever) ------------------ */
+
+/* ----------------------- END VARIABLES ------------------ */
+
+
 /* ----------------------- GLOBAL ------------------ */
 
 html {
@@ -219,6 +235,10 @@ a:hover {
   flex-flow: reverse;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .hide {
   display: none;
 }
@@ -246,6 +266,20 @@ a:hover {
 .menu-closed {
   display: none;
 }
+
+/* ----------------------- BILLBOARD ------------------ */
+
+.billboard-img {
+  border-radius: 2%;
+}
+
+.billboard-content {
+  width: 100%;
+  height: 50%;
+  background-color: #f17a5c;
+  padding: 4.8rem;
+  border-radius: 0 0 2rem 2rem;
+}
 /* ----------------------- ASSETS ------------------ */
 
 .illustration {
@@ -257,15 +291,34 @@ a:hover {
 }
 
 .img-box {
-  display: none;
-  background-color: #f17a5c;
+  display: block;
+  background: var(--primary-color);
   width: 100%;
   height: 20rem;
   margin-top: 4.8rem;
   margin-bottom: 4.8rem;
 }
 
-/* ----------------------- IMAGES ------------------ */
+/* ----------------------- EFFECTS ------------------ */
+
+.zoom-effect-container {
+  width: 640px;
+  height: 360px;
+  margin-bottom: 4.8rem;
+  margin-top: 4.8rem;
+}
+
+.image-card img {
+-webkit-transition: 0.4s ease;
+transition: 0.4s ease;
+}
+
+.zoom-effect-container:hover .image-card img {
+-webkit-transform: scale(1.08);
+transform: scale(1.08);
+}
+
+/* ----------------------- END EFFECTS ------------------ */
 
 
 /* ----------------------- FOOTER ------------------ */
@@ -405,3 +458,5 @@ a:hover {
   }
 }
 /* ----------------------- RESPONSIVE 960px END ------------------ */
+
+
