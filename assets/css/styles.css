@@ -175,7 +175,7 @@ h3 {
   line-height: 2.8rem;
 }
 
-.projects__h {
+.project__h {
   color:#393331;
     }
 
@@ -344,6 +344,34 @@ a:hover {
 margin: 4.8rem 0 4.8rem 0;
 }
 
+/* ----------------------- LISTS ------------------ */
+
+ul.project__ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul.project__ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color:#F17A5C; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  font-size: 250%;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1rem; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  vertical-align: middle;
+  position: absolute;
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.takeaways {
+  margin-left: 4.8rem;
+}
+
+
+/* ----------------------- END LISTS ------------------ */
+
+
 /* ----------------------- EFFECTS ------------------ */
 
 .zoom-effect-container {
@@ -425,7 +453,7 @@ transform: scale(1.08);
 
   body {
     font-size: 1.8rem;
-    line-height: 2.6rem;
+    line-height: 3.2rem;
   }
   /* ----------------------- UTILITIES ------------------ */
 
