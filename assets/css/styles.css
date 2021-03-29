@@ -138,6 +138,7 @@ button::-moz-focus-inner {
   --primary-400:#F17A5C;
   --space-lg:0rem;
   --space-md:0rem;
+  --primary-padding: 4.8rem;
 }
 /* ----------------------- use "space" to define vertical rythm and color palettes (any value, --whatever) ------------------ */
 
@@ -243,6 +244,12 @@ a:hover {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
+  /* ----------------------- END UTILITIES ------------------ */
+
 /* ----------------------- HEADER ------------------ */
 
 .header {
@@ -267,33 +274,20 @@ a:hover {
   display: none;
 }
 
-/* ----------------------- BILLBOARD ------------------ */
+/* ----------------------- END NAVIGATION ------------------ */
 
-.billboard__container {
-  position: relative;
-  z-index: 0;
-}
+/* ----------------------- BILLBOARD ------------------ */
 
 .billboard__text {
   color: #fdf8f7;
-  position: absolute;
-  z-index: 5;
   margin: 4.8rem;
+  position: absolute;
 }
 
 .billboard__bg {
   border-radius: 2rem;
-}
-
-.billboard__img {
-  display: block;
-  position:absolute;
-  width: 40rem;
-  top: 10%;
-  right: 0%;
-  margin: 4.8rem;
-  padding: 2rem;
-  overflow: hide;
+  position: relative;
+  z-index: -10;
 }
 
 .billboard__content {
@@ -301,9 +295,10 @@ a:hover {
   background-color: #f17a5c;
   padding: 4.8rem 4.8rem 6.4rem;
   border-radius: 0 0 2rem 2rem;
-  position: absolute;
-  top: 65%;
+  margin: -1.5rem 0 0 0;
+  z-index: 10;
 }
+
 /* ----------------------- ASSETS ------------------ */
 
 .illustration {
@@ -408,7 +403,7 @@ transform: scale(1.08);
   }
   /* ----------------------- UTILITIES ------------------ */
 
-  .flex-container {
+  .flex-container-min {
     display: flex;
   }
 
@@ -444,6 +439,9 @@ transform: scale(1.08);
     align-items: start;
   }
 
+  .justify-center-min {
+    justify-content: center;
+  }
 
   .display {
     display: block;
@@ -453,6 +451,16 @@ transform: scale(1.08);
     display: inline-block;
   }
 
+  .column-min-margin {
+    width: 50%;
+    margin: 0 7.2rem 0 0;
+  }
+
+  .wrapper__project-text {
+    margin: 0 auto;
+  max-width: 128rem;
+  padding: 0 20rem;
+  }
   /* ----------------------- HEADER ------------------ */
 
   .navigation {
