@@ -167,12 +167,17 @@ h1 {
 h2 {
   font-size: 2.3rem;
   line-height: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 h3 {
   font-size: 2rem;
   line-height: 2.8rem;
 }
+
+.projects__h {
+  color:#393331;
+    }
 
 body {
   background-color: #fdf8f7;
@@ -185,6 +190,10 @@ body {
 p,
 p + p {
   margin-bottom: 1.6rem;
+}
+
+.p-final {
+  margin-bottom: 4.8rem;
 }
 
 a:link {
@@ -278,6 +287,14 @@ a:hover {
 
 /* ----------------------- BILLBOARD ------------------ */
 
+.billboard__h {
+  color: #fdf8f7;
+}
+
+.billboard__content__h {
+  color:#393938;
+}
+
 .billboard__text {
   color: #fdf8f7;
   margin: 4.8rem;
@@ -297,6 +314,11 @@ a:hover {
   border-radius: 0 0 2rem 2rem;
   margin: -1.5rem 0 0 0;
   z-index: 10;
+  margin-bottom:10.4rem;
+}
+
+.billboard__p {
+  margin-bottom:5.6rem;
 }
 
 /* ----------------------- ASSETS ------------------ */
@@ -316,6 +338,10 @@ a:hover {
   height: 20rem;
   margin-top: 4.8rem;
   margin-bottom: 4.8rem;
+}
+
+.project__img {
+margin: 4.8rem 0 4.8rem 0;
 }
 
 /* ----------------------- EFFECTS ------------------ */
@@ -456,11 +482,12 @@ transform: scale(1.08);
     margin: 0 7.2rem 0 0;
   }
 
-  .wrapper__project-text {
-    margin: 0 auto;
+  .wrapper__center-min {
+  margin: 0 auto;
   max-width: 128rem;
   padding: 0 20rem;
   }
+
   /* ----------------------- HEADER ------------------ */
 
   .navigation {
