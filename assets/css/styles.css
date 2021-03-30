@@ -349,6 +349,11 @@ a:hover {
 margin: 4.8rem 0 4.8rem 0;
 }
 
+.project__img-min {
+display: none;  
+}
+  
+
 /* ----------------------- LISTS ------------------ */
 
 ul.project__ul {
@@ -562,7 +567,15 @@ transform: scale(1.08);
     display: block;
     margin: 6.4rem;
   }
-}
+
+  .project__img-min {
+    margin: 4.8rem 0 4.8rem 0;
+    display: block;
+    }
+
+    .project__img {
+      display: none;
+      }
 /* ----------------------- RESPONSIVE 960px END ------------------ */
 
 
