@@ -273,6 +273,11 @@ a:hover {
   margin-bottom: 6.4rem;
 }
 
+.logo {
+  width: 100%;
+  letter-spacing: 0.4rem;
+}
+
 /* ----------------------- NAVIGATION ------------------ */
 
 .navigation {
@@ -518,8 +523,10 @@ transform: scale(1.08);
 
   /* ----------------------- HEADER ------------------ */
 
-  .navigation {
-    display: block;
+  .navigation-min {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .nav-item {
@@ -533,6 +540,12 @@ transform: scale(1.08);
   .menu-open {
     display: none;
   }
+
+  .logo-min {
+    width: 50%;
+    letter-spacing: 0.4rem;
+  }
+  
   /* ----------------------- ASSETS ------------------ */
 
   .illustration {
