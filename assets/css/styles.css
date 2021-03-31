@@ -257,6 +257,14 @@ a:hover {
   position: fixed;
 }
 
+.parragraph-max {
+  display: block;
+}
+
+.parragraph-min {
+  display: none;
+}
+
   /* ----------------------- END UTILITIES ------------------ */
 
 /* ----------------------- HEADER ------------------ */
@@ -296,8 +304,11 @@ a:hover {
   display: none;
 }
 
-/* ----------------------- TEST ------------------ */
+/* ----------------------- NAVIGATION / HAMBURGER ------------------ */
 
+.hamburger-icon {
+font-size: 2.4rem;
+}
 
 .overlay {
   height: 100%;
@@ -309,7 +320,7 @@ a:hover {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.9);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 .overlay-content {
@@ -321,9 +332,9 @@ a:hover {
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 1.6rem;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 1.8rem;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -349,8 +360,7 @@ a:hover {
   }
 }
 
-/* ----------------------- END TEST ------------------ */
-
+/* ----------------------- END NAVIGATION / HAMBURGER  ------------------ */
 
 /* ----------------------- END NAVIGATION ------------------ */
 
@@ -493,8 +503,8 @@ transform: scale(1.08);
 }
 
 .footer__icon {
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .footer-anchor:link {
@@ -587,6 +597,10 @@ transform: scale(1.08);
     display: block;
   }
 
+  .hide {
+    display: none;
+  }
+
   .inline {
     display: inline-block;
   }
@@ -598,6 +612,14 @@ transform: scale(1.08);
 
   .column {
     width: 50%;
+  }
+
+  .parragraph-min {
+    display: block;
+  }
+
+  .parragraph-max {
+    display: none;
   }
 
   /* ----------------------- HEADER ------------------ */
@@ -662,4 +684,15 @@ transform: scale(1.08);
       margin-right: auto;
       }
     }
+
+      /* ----------------------- FOOTER ------------------ */
+
+    .footer__icon {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
+          /* ----------------------- FOOTER END ------------------ */
+
+    
 /* ----------------------- RESPONSIVE 960px END ------------------ */
