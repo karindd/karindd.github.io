@@ -11,34 +11,24 @@
             rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet">
     </head>
-
     <body>
         <header class="header">
-            <div class="header-container wrapper wrapper-min">
+            <div class="header-container wrapper">
                 <div class="logo">
                 <div>KARIN DAHLSTEDT</div>
             </div>
-                <nav class="navigation" role='navigation'>
-                    <div id="menuToggle">
-                        <input type="checkbox"/>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    <ul id="menu">
-                        <li class="nav-item inline">
-                            <a class="nav-link" href="https://karindd.github.io">Projects</a>
-                        </li>
-                        <li class="nav-item inline">
-                            <a class="nav-link" href="https://karindd.github.io/about/">About</a>
-                        </li>
-                        <li class="nav-item inline">
-                            <a class="nav-link" href="#footer">Let's Connect</a>
-                        </li>
-                    </ul>
+            <div class="hamburger-menu">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">Projects</a>
+                  <a href="#">About</a>
+                  <a href="#">Let's Connect</a>
                 </div>
-                </nav>
-                </nav>
-                <nav class="navigation-min">
+              </div>
+              <span onclick="openNav()">&#9776;</span>
+            </div>
+                <nav class="navigation navigation-min">
                     <ul>
                         <li class="nav-item inline">
                             <a class="nav-link" href="https://karindd.github.io">Projects</a>
