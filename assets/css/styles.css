@@ -156,7 +156,7 @@ h2,
 h3 {
   font-family: 'DM SerifDisplay';
   color: #e06343;
-  padding: 0 0 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 h1 {
@@ -472,7 +472,7 @@ transform: scale(1.08);
   }
   /* ----------------------- UTILITIES ------------------ */
 
-  .wrapper-min {
+  .wrapper {
     max-width: 128rem;
     padding: 0 4.8rem;
   }
@@ -491,10 +491,6 @@ transform: scale(1.08);
     align-items: flex-start;
     display: flex;
     width: 100%;
-  }
-
-  .column-min {
-    width: 50%;
   }
 
   .reverse-min {
@@ -556,7 +552,7 @@ transform: scale(1.08);
     display: none;
   }
 
-  .logo-min {
+  .logo {
     width: 50%;
     letter-spacing: 0.4rem;
   }
