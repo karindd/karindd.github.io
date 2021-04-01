@@ -156,23 +156,24 @@ h2,
 h3 {
   font-family: 'DM SerifDisplay';
   color: #e06343;
-  margin-bottom: 1.6rem;
 }
 
 h1 {
   font-size: 2.5rem;
   line-height: 3.4rem;
+  margin-bottom: 1.6rem;
 }
 
 h2 {
   font-size: 2.3rem;
   line-height: 3.2rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.8rem;
 }
 
 h3 {
   font-size: 2rem;
   line-height: 2.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .project__h {
@@ -366,6 +367,22 @@ font-size: 2.4rem;
 
 /* ----------------------- BILLBOARD ------------------ */
 
+.billboard_bg {
+  background-image: url("../img/space-travel-bg.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.billboard_mockup {
+  background-image: url("../img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: right 4.8rem bottom;
+  background-attachment: fixed;
+  background-size: 30%;
+}
+
 .billboard__h {
   color: #fdf8f7;
 }
@@ -376,14 +393,8 @@ font-size: 2.4rem;
 
 .billboard__text {
   color: #fdf8f7;
-  margin: 4.8rem;
-  position: absolute;
-}
-
-.billboard__bg {
-  border-radius: 2rem;
-  position: relative;
-  z-index: -10;
+  margin: 11.2rem 4.8rem 11.2rem 4.8rem;
+  width: 40%;
 }
 
 .billboard__content {
@@ -391,9 +402,7 @@ font-size: 2.4rem;
   background-color: #f17a5c;
   padding: 4.8rem 4.8rem 6.4rem;
   border-radius: 0 0 2rem 2rem;
-  margin: -1.5rem 0 0 0;
-  z-index: 10;
-  margin-bottom:10.4rem;
+  margin-bottom:4.8rem;
 }
 
 .billboard__p {
@@ -534,6 +543,7 @@ transform: scale(1.08);
 
   h2 {
     font-size: 4.2rem;
+    margin-bottom: 1.6rem;
   }
 
   h3 {
