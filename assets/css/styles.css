@@ -193,10 +193,6 @@ p + p {
   margin-bottom: 1.6rem;
 }
 
-.p-final {
-  margin-bottom: 4.8rem;
-}
-
 a:link {
   color: #e06343;
 }
@@ -265,6 +261,10 @@ a:hover {
 .parragraph-min {
   display: none;
 }
+
+.margin-bottom {
+  margin-bottom: 2.4rem;
+} 
 
   /* ----------------------- END UTILITIES ------------------ */
 
@@ -370,7 +370,7 @@ font-size: 2.4rem;
 .billboard_bg {
   background-image: url("../img/space-travel-bg.png");
   background-repeat: repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   border-radius: 0 0 3rem 3rem;
 }
@@ -378,9 +378,9 @@ font-size: 2.4rem;
 .billboard_mockup {
   background-image: url("../img/bg2.png");
   background-repeat: no-repeat;
-  background-position: right 4.8rem bottom;
-  background-attachment: fixed;
-  background-size: 30%;
+  background-position: right 2.4rem bottom;
+  background-attachment: scroll;
+  background-size: 40%;
 }
 
 .billboard__h {
@@ -393,14 +393,14 @@ font-size: 2.4rem;
 
 .billboard__text {
   color: #fdf8f7;
-  margin: 11.2rem 4.8rem 11.2rem 4.8rem;
+  margin: 6.4rem 2.4rem 6.4rem 2.4rem;
   width: 40%;
 }
 
 .billboard__content {
   width: 100%;
   background-color: #f17a5c;
-  padding: 4.8rem 4.8rem 6.4rem;
+  padding: 4.8rem 2.4rem 4.8rem;
   border-radius: 0 0 2rem 2rem;
   margin-bottom:4.8rem;
 }
@@ -409,7 +409,7 @@ font-size: 2.4rem;
   margin-bottom:5.6rem;
 }
 
-/* ----------------------- ASSETS ------------------ */
+/* ----------------------- ILLUSTRATIONS ------------------ */
 
 .illustration {
   margin: 3.2rem;
@@ -418,6 +418,11 @@ font-size: 2.4rem;
 .arrow__svg {
  display: none;
 }
+
+/* ----------------------- ILLUSTRATIONS END ------------------ */
+
+
+/* ----------------------- PROJECTS ------------------ */
 
 .project__img {
 margin: 4.8rem 0 4.8rem 0;
@@ -441,7 +446,17 @@ display: none;
   margin-left: auto;
   margin-right: auto;
 }
-  
+
+.typography-container {
+background-color: var(--primary-color);
+padding: 5.6rem;
+border-radius: 2rem;
+background-size: cover;
+margin-top: 4.8rem;
+}
+
+  /* ----------------------- PROJECTS END ------------------ */
+
 /* ----------------------- LISTS ------------------ */
 
 ul.project__ul {
@@ -554,6 +569,15 @@ transform: scale(1.08);
     font-size: 1.8rem;
     line-height: 3.2rem;
   }
+
+  .p-margin {
+    margin-bottom: 4.8rem;
+  }
+
+  .margin-bottom {
+    margin-bottom: 4.8rem;
+  } 
+
   /* ----------------------- UTILITIES ------------------ */
 
   .wrapper {
@@ -620,7 +644,15 @@ transform: scale(1.08);
     margin: 0 7.2rem 0 0;
   }
 
+  .margin-right-min {
+    margin-right: 7.2rem;
+  } 
+
   .column {
+    width: 50%;
+  }
+
+  .column-min {
     width: 50%;
   }
 
@@ -662,8 +694,53 @@ transform: scale(1.08);
     width: 50%;
     letter-spacing: 0.4rem;
   }
+
+  /* ----------------------- BILLBOARD ------------------ */
+
+  .billboard_bg {
+    background-image: url("../img/space-travel-bg.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 0 0 3rem 3rem;
+  }
   
-  /* ----------------------- ASSETS ------------------ */
+  .billboard_mockup {
+    background-image: url("../img/bg2.png");
+    background-repeat: no-repeat;
+    background-position: right 4.8rem bottom;
+    background-attachment: fixed;
+    background-size: 30%;
+  }
+
+  .billboard__text {
+    color: #fdf8f7;
+    margin: 8.8rem 4.8rem 0 4.8rem;
+    height: 70vh;
+    width: 40%;
+  }
+
+  .billboard__content {
+    width: 100%;
+    background-color: #f17a5c;
+    padding: 6.4rem 4.8rem 6.4rem;
+    border-radius: 0 0 2rem 2rem;
+    margin-bottom:4.8rem;
+  }
+
+  .billboard__content__column-right {
+    width: 50%;
+    margin-right: 4.8rem;
+  }
+
+  .billboard__content__column-left {
+    width: 50%;
+    margin-left: 4.8rem;
+  }
+  
+    /* ----------------------- BILLBOARD END ------------------ */
+
+  /* ----------------------- ILLUSTRATIONS ------------------ */
 
   .illustration {
     margin: 0 0 3.2rem 8.8rem;
@@ -673,6 +750,10 @@ transform: scale(1.08);
     display: block;
     margin: 6.4rem;
   }
+
+    /* ----------------------- ILLUSTRATIONS END ------------------ */
+
+    /* ----------------------- PROJECTS ------------------ */
 
   .project__img-min {
     margin: 4.8rem 0 4.8rem 0;
@@ -695,13 +776,18 @@ transform: scale(1.08);
       }
     }
 
+  .project__section {
+    margin-bottom: 8rem;
+    }
+
+      /* ----------------------- PROJECTS END ------------------ */
+
       /* ----------------------- FOOTER ------------------ */
 
     .footer__icon {
       width: 3.2rem;
       height: 3.2rem;
     }
-
           /* ----------------------- FOOTER END ------------------ */
 
     
