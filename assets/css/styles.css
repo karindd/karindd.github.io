@@ -136,6 +136,8 @@ button::-moz-focus-inner {
   --primary-color:#F17A5C;
   --secondary-color: #393938;
   --primary-400:#F17A5C;
+  --space-travel: #FFA480;
+  --project-text: #FFA480;
   --space-lg:0rem;
   --space-md:0rem;
   --primary-padding: 4.8rem;
@@ -143,7 +145,6 @@ button::-moz-focus-inner {
 /* ----------------------- use "space" to define vertical rythm and color palettes (any value, --whatever) ------------------ */
 
 /* ----------------------- END VARIABLES ------------------ */
-
 
 /* ----------------------- GLOBAL ------------------ */
 
@@ -191,6 +192,14 @@ body {
 p,
 p + p {
   margin-bottom: 1.6rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.underline:link {
+  text-decoration: underline;
 }
 
 a:link {
@@ -266,7 +275,7 @@ a:hover {
   margin-bottom: 2.4rem;
 } 
 
-  /* ----------------------- END UTILITIES ------------------ */
+/* ----------------------- END UTILITIES ------------------ */
 
 /* ----------------------- HEADER ------------------ */
 
@@ -286,6 +295,9 @@ a:hover {
   width: 100%;
   letter-spacing: 0.4rem;
 }
+
+/* ----------------------- END HEADER ------------------ */
+
 
 /* ----------------------- NAVIGATION ------------------ */
 
@@ -365,26 +377,44 @@ font-size: 2.4rem;
 
 /* ----------------------- END NAVIGATION ------------------ */
 
-/* ----------------------- BILLBOARD ------------------ */
 
-.billboard_bg {
-  background-image: url("../img/space-travel-bg.png");
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  border-radius: 0 0 3rem 3rem;
+/* ----------------------- HOME ------------------ */
+
+.illustration {
+  margin: 3.2rem;
 }
 
-.billboard_mockup {
-  background-image: url("../img/bg2.png");
-  background-repeat: no-repeat;
-  background-position: right 2.4rem bottom;
-  background-attachment: scroll;
-  background-size: 40%;
+.arrow-svg {
+ display: none;
 }
 
-.billboard__h {
+.zoom-effect-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2.4rem;
+  margin-top: 4.8rem;
+}
+
+.image-card img {
+-webkit-transition: 0.4s ease;
+transition: 0.4s ease;
+}
+
+.zoom-effect-container:hover .image-card img {
+-webkit-transform: scale(1.08);
+transform: scale(1.08);
+}
+
+/* ----------------------- END HOME ------------------ */
+
+ /* ----------------------- PROJECTS BILLBOARD ------------------ */
+
+ .billboard__h {
   color: #fdf8f7;
+}
+
+.billboard__p {
+  margin-bottom:5.6rem;
 }
 
 .billboard__content__h {
@@ -399,28 +429,12 @@ font-size: 2.4rem;
 
 .billboard__content {
   width: 100%;
-  background-color: #f17a5c;
   padding: 4.8rem 2.4rem 4.8rem;
   border-radius: 0 0 2rem 2rem;
   margin-bottom:4.8rem;
 }
 
-.billboard__p {
-  margin-bottom:5.6rem;
-}
-
-/* ----------------------- ILLUSTRATIONS ------------------ */
-
-.illustration {
-  margin: 3.2rem;
-}
-
-.arrow__svg {
- display: none;
-}
-
-/* ----------------------- ILLUSTRATIONS END ------------------ */
-
+/* ----------------------- END PROJECTS BILLBOARD ------------------ */
 
 /* ----------------------- PROJECTS ------------------ */
 
@@ -430,10 +444,6 @@ margin: 4.8rem 0 4.8rem 0;
 
 .project__img-min {
 display: none;  
-}
-
-.space-travel__bg {
-  background-image: url(../img/space-travel-bg.png);
 }
 
 .project__bg {
@@ -455,7 +465,44 @@ background-size: cover;
 margin-top: 4.8rem;
 }
 
-  /* ----------------------- PROJECTS END ------------------ */
+.project__section {
+  margin-bottom: 4.8rem;
+  }
+
+
+.takeaways {
+  margin-left: 4.8rem;
+  }
+
+/* ----------------------- END PROJECTS ------------------ */
+
+/* ----------------------- SPACE TRAVEL ------------------ */
+
+.bg-color--space-travel {
+  background-color: var(--space-travel);
+}
+
+ul.project__ul--space-travel li::before {
+  color:var(--space-travel);
+}
+
+.billboard__bg--space-travel {
+  background-image: url("../img/space-travel-bg.png");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.billboard_mockup--space-travel {
+  background-image: url("../img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: right 2.4rem bottom;
+  background-attachment: scroll;
+  background-size: 40%;
+}
+
+/* ----------------------- END SPACE TRAVEL ------------------ */
 
 /* ----------------------- LISTS ------------------ */
 
@@ -465,7 +512,6 @@ ul.project__ul {
 
 ul.project__ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color:#F17A5C; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   font-size: 250%;
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -477,35 +523,7 @@ ul.project__ul li::before {
   margin-bottom: 1.6rem;
 }
 
-.takeaways {
-  margin-left: 4.8rem;
-}
-
-
 /* ----------------------- END LISTS ------------------ */
-
-
-/* ----------------------- EFFECTS ------------------ */
-
-.zoom-effect-container {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 2.4rem;
-  margin-top: 4.8rem;
-}
-
-.image-card img {
--webkit-transition: 0.4s ease;
-transition: 0.4s ease;
-}
-
-.zoom-effect-container:hover .image-card img {
--webkit-transform: scale(1.08);
-transform: scale(1.08);
-}
-
-/* ----------------------- END EFFECTS ------------------ */
-
 
 /* ----------------------- FOOTER ------------------ */
 
@@ -533,6 +551,7 @@ transform: scale(1.08);
 
 .footer-anchor:link {
   color: #fdf8f7;
+  text-decoration-line: underline;
 }
 
 .footer-anchor:visited {
@@ -547,8 +566,12 @@ transform: scale(1.08);
   color: #393938;
 }
 
+/* ----------------------- END FOOTER ------------------ */
+
+
 /* ----------------------- RESPONSIVE 960px ------------------ */
 @media (min-width: 60em) {
+
   /* ----------------------- GLOBAL ------------------ */
 
   h1 {
@@ -577,6 +600,8 @@ transform: scale(1.08);
   .margin-bottom {
     margin-bottom: 4.8rem;
   } 
+
+  /* ----------------------- END GLOBAL ------------------ */
 
   /* ----------------------- UTILITIES ------------------ */
 
@@ -664,6 +689,8 @@ transform: scale(1.08);
     display: none;
   }
 
+  /* ----------------------- END UTILITIES ------------------ */
+
   /* ----------------------- HEADER ------------------ */
 
   .hamburger-menu {
@@ -695,9 +722,67 @@ transform: scale(1.08);
     letter-spacing: 0.4rem;
   }
 
-  /* ----------------------- BILLBOARD ------------------ */
+/* ----------------------- END HEADER ------------------ */
 
-  .billboard_bg {
+/* ----------------------- HOME ------------------ */
+
+  .illustration {
+    margin: 0 0 3.2rem 8.8rem;
+  }
+
+  .arrow-svg {
+    display: block;
+    margin: 6.4rem;
+  }
+
+/* ----------------------- END HOME ------------------ */
+
+/* ----------------------- PROJECTS BILLBOARD ------------------ */
+
+.billboard__content__column-right {
+  width: 50%;
+  margin-right: 4.8rem;
+}
+
+.billboard__content__column-left {
+  width: 50%;
+  margin-left: 4.8rem;
+}
+
+.project__bg {
+  border-radius: 4rem;
+    }
+
+.project__mockup {
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+/* ----------------------- END PROJECTS BILLBOARD ------------------ */
+
+/* ----------------------- PROJECTS ------------------ */
+
+  .project__img-min {
+    margin: 4.8rem 0 4.8rem 0;
+    display: block;
+    }
+
+  .project__img {
+      display: none;
+      }
+
+
+  .project__section {
+    margin-bottom: 8rem;
+    }
+
+/* ----------------------- END PROJECTS ------------------ */
+
+/* ----------------------- SPACE TRAVEL ------------------ */
+
+.billboard__bg--space-travel {
     background-image: url("../img/space-travel-bg.png");
     background-repeat: repeat;
     background-attachment: fixed;
@@ -705,7 +790,7 @@ transform: scale(1.08);
     border-radius: 0 0 3rem 3rem;
   }
   
-  .billboard_mockup {
+  .billboard_mockup--space-travel {
     background-image: url("../img/bg2.png");
     background-repeat: no-repeat;
     background-position: right 4.8rem bottom;
@@ -722,73 +807,21 @@ transform: scale(1.08);
 
   .billboard__content {
     width: 100%;
-    background-color: #f17a5c;
+    background-color: #FFA480;
     padding: 6.4rem 4.8rem 6.4rem;
     border-radius: 0 0 2rem 2rem;
     margin-bottom:4.8rem;
   }
-
-  .billboard__content__column-right {
-    width: 50%;
-    margin-right: 4.8rem;
-  }
-
-  .billboard__content__column-left {
-    width: 50%;
-    margin-left: 4.8rem;
-  }
   
-    /* ----------------------- BILLBOARD END ------------------ */
+/* ----------------------- END SPACE TRAVEL ------------------ */
 
-  /* ----------------------- ILLUSTRATIONS ------------------ */
-
-  .illustration {
-    margin: 0 0 3.2rem 8.8rem;
-  }
-
-  .arrow__svg {
-    display: block;
-    margin: 6.4rem;
-  }
-
-    /* ----------------------- ILLUSTRATIONS END ------------------ */
-
-    /* ----------------------- PROJECTS ------------------ */
-
-  .project__img-min {
-    margin: 4.8rem 0 4.8rem 0;
-    display: block;
-    }
-
-  .project__img {
-      display: none;
-      }
-
-  .project__bg {
-    border-radius: 4rem;
-      }
-
-  .project__mockup {
-      height: auto;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      }
-    }
-
-  .project__section {
-    margin-bottom: 8rem;
-    }
-
-      /* ----------------------- PROJECTS END ------------------ */
-
-      /* ----------------------- FOOTER ------------------ */
+/* ----------------------- FOOTER ------------------ */
 
     .footer__icon {
       width: 3.2rem;
       height: 3.2rem;
     }
-          /* ----------------------- FOOTER END ------------------ */
-
-    
-/* ----------------------- RESPONSIVE 960px END ------------------ */
+  
+/* ----------------------- END FOOTER ------------------ */
+}   
+/* ----------------------- END RESPONSIVE 960px ------------------ */
