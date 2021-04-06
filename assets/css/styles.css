@@ -247,6 +247,15 @@ a:hover {
   align-items: flex-end;
 }
 
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+
 .reverse {
   flex-flow: reverse;
 }
@@ -272,7 +281,7 @@ a:hover {
 }
 
 .margin-bottom {
-  margin-bottom: 2.4rem;
+  margin-bottom: 4.8rem;
 } 
 
 /* ----------------------- END UTILITIES ------------------ */
@@ -388,6 +397,14 @@ font-size: 2.4rem;
  display: none;
 }
 
+.project__bg {
+  border-radius: 1rem;
+    }
+
+.space-travel__bg {
+      background-image: url(../img/space-travel/space-travel-bg.png);
+    }
+
 .zoom-effect-container {
   width: 100%;
   height: 100%;
@@ -439,15 +456,11 @@ transform: scale(1.08);
 /* ----------------------- PROJECTS ------------------ */
 
 .project__img {
-margin: 4.8rem 0 4.8rem 0;
+margin: 0 0 3.2rem 0;
 }
 
 .project__img-min {
 display: none;  
-}
-
-.project__bg {
-  border-radius: 1rem;
 }
 
 .project__mockup {
@@ -457,23 +470,40 @@ display: none;
   margin-right: auto;
 }
 
-.typography-container {
-background-color: var(--primary-color);
-padding: 5.6rem;
+.content__container {
+padding: 3.2rem;
 border-radius: 2rem;
 background-size: cover;
-margin-top: 4.8rem;
+margin: 4.8rem 0 4.8rem 0;
+}
+
+.content__container--column-right {
+  padding: 0 1.6rem 0 2.4rem;
+  width: 50%;
+}
+
+.content__container--column-left {
+  padding: 0 2.4rem 0 1.6rem;
+  width: 50%;
 }
 
 .project__section {
   margin-bottom: 4.8rem;
   }
 
-
-.takeaways {
+.margin-left {
   margin-left: 4.8rem;
   }
 
+.colors {
+margin-bottom: 4.8rem;
+width: 100%;
+height: auto;
+}
+
+.typeface-img {
+  width: 200%;
+}
 /* ----------------------- END PROJECTS ------------------ */
 
 /* ----------------------- SPACE TRAVEL ------------------ */
@@ -487,7 +517,7 @@ ul.project__ul--space-travel li::before {
 }
 
 .billboard__bg--space-travel {
-  background-image: url("../img/space-travel-bg.png");
+  background-image: url("../img/space-travel/space-travel-bg.png");
   background-repeat: repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -495,7 +525,7 @@ ul.project__ul--space-travel li::before {
 }
 
 .billboard_mockup--space-travel {
-  background-image: url("../img/bg2.png");
+  background-image: url("../img/space-travel/bg2.png");
   background-repeat: no-repeat;
   background-position: right 2.4rem bottom;
   background-attachment: scroll;
@@ -520,7 +550,10 @@ ul.project__ul li::before {
   vertical-align: middle;
   position: absolute;
   line-height: 2.4rem;
-  margin-bottom: 1.6rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
 }
 
 /* ----------------------- END LISTS ------------------ */
@@ -577,24 +610,22 @@ ul.project__ul li::before {
   h1 {
     font-size: 5.4rem;
     line-height: 6.7rem;
+    margin-bottom: 1.6rem;
   }
 
   h2 {
     font-size: 4.2rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.4rem;
   }
 
   h3 {
     font-size: 3.2rem;
+    margin-bottom: 2.4rem;
   }
 
   body {
     font-size: 1.8rem;
     line-height: 3.2rem;
-  }
-
-  .p-margin {
-    margin-bottom: 4.8rem;
   }
 
   .margin-bottom {
@@ -607,10 +638,10 @@ ul.project__ul li::before {
 
   .wrapper {
     max-width: 128rem;
-    padding: 0 4.8rem;
+    padding: 0 8.8rem;
   }
 
-  .wrapper__center-min {
+  .wrapper--center-min {
     margin: 0 auto;
     max-width: 128rem;
     padding: 0 20rem;
@@ -735,23 +766,23 @@ ul.project__ul li::before {
     margin: 6.4rem;
   }
 
+  .project__bg {
+    border-radius: 4rem;
+      }
+
 /* ----------------------- END HOME ------------------ */
 
 /* ----------------------- PROJECTS BILLBOARD ------------------ */
 
-.billboard__content__column-right {
+.billboard__content--column-right {
   width: 50%;
-  margin-right: 4.8rem;
+  margin-right: 8.8rem;
 }
 
-.billboard__content__column-left {
+.billboard__content--column-left {
   width: 50%;
   margin-left: 4.8rem;
 }
-
-.project__bg {
-  border-radius: 4rem;
-    }
 
 .project__mockup {
     height: auto;
@@ -760,12 +791,27 @@ ul.project__ul li::before {
     margin-right: auto;
     }
 
+    .billboard__content {
+      width: 100%;
+      padding: 6.4rem 8.8rem 6.4rem;
+      border-radius: 0 0 2rem 2rem;
+      margin-bottom:6.4rem;
+    }
+
+    .billboard__text {
+      color: #fdf8f7;
+      margin: 8.8rem 8.8rem 0 8.8rem;
+      height: 70vh;
+      width: 40%;
+    }
+    
+
 /* ----------------------- END PROJECTS BILLBOARD ------------------ */
 
 /* ----------------------- PROJECTS ------------------ */
 
   .project__img-min {
-    margin: 4.8rem 0 4.8rem 0;
+    margin: 0rem 0 2.4rem 0;
     display: block;
     }
 
@@ -773,17 +819,40 @@ ul.project__ul li::before {
       display: none;
       }
 
+  .content__container {
+      padding: 5.6rem;
+      border-radius: 2rem;
+      background-size: cover;
+      margin: 4.8rem 0 4.8rem 0;
+        }
+        
+        .content__container--column-right {
+          padding: 0 2.4rem 0 4.8rem;
+          width: 50%;
+        }
+        
+        .content__container--column-left {
+          padding: 0 4.8rem 0 2.4rem;
+          width: 50%;
+        }
+        
 
   .project__section {
     margin-bottom: 8rem;
     }
+
+    .colors {
+      margin-bottom: 6.4rem;
+      width: 100%;
+      height: auto;
+      }
 
 /* ----------------------- END PROJECTS ------------------ */
 
 /* ----------------------- SPACE TRAVEL ------------------ */
 
 .billboard__bg--space-travel {
-    background-image: url("../img/space-travel-bg.png");
+    background-image: url("../img/space-travel/space-travel-bg.png");
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -791,29 +860,23 @@ ul.project__ul li::before {
   }
   
   .billboard_mockup--space-travel {
-    background-image: url("../img/bg2.png");
+    background-image: url("../img/space-travel/bg2.png");
     background-repeat: no-repeat;
-    background-position: right 4.8rem bottom;
+    background-position: right 8.8rem bottom;
     background-attachment: fixed;
     background-size: 30%;
   }
 
-  .billboard__text {
-    color: #fdf8f7;
-    margin: 8.8rem 4.8rem 0 4.8rem;
-    height: 70vh;
-    width: 40%;
-  }
-
-  .billboard__content {
-    width: 100%;
-    background-color: #FFA480;
-    padding: 6.4rem 4.8rem 6.4rem;
-    border-radius: 0 0 2rem 2rem;
-    margin-bottom:4.8rem;
-  }
-  
 /* ----------------------- END SPACE TRAVEL ------------------ */
+
+
+/* ----------------------- LISTS ------------------ */
+
+li {
+  margin-bottom: 1.6rem;
+}
+
+/* ----------------------- END LISTS ------------------ */
 
 /* ----------------------- FOOTER ------------------ */
 
