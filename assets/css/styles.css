@@ -218,6 +218,8 @@ a:hover {
   color: #393938;
 }
 
+.progress { position: fixed; top: 0; left: 0; height: 0.8rem; background-color: #393938; transition: all linear 0.1s; min-width: 0%; }
+
 /* ----------------------- UTILITIES ------------------ */
 .wrapper {
   margin: 0 auto;
