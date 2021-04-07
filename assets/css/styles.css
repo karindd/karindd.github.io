@@ -574,6 +574,7 @@ height: auto;
   height: 35rem;
   width: auto;
   margin: -1rem;
+  object-fit: cover;
 }
 /* ----------------------- END PROJECTS ------------------ */
 
@@ -805,6 +806,10 @@ height: auto;
   .margin-right-min {
     margin-right: 7.2rem;
   } 
+
+  .margin-top--neg {
+    margin-top: -8rem;
+  }
 
   .column {
     width: 50%;
