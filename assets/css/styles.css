@@ -162,7 +162,7 @@ h1,
 h2,
 h3 {
   font-family: 'DM SerifDisplay';
-  color: #393331;
+  color: var(--secondary-color);
 }
 
 .h-color {
@@ -191,7 +191,7 @@ h3 {
   font-size: var(--body-lg-min) 
   }
 
-  .b-sm {
+.b-sm {
     font-size: var(--body-sm-min) 
     }
 
@@ -262,6 +262,10 @@ a:hover {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .space-around {
@@ -559,6 +563,17 @@ height: auto;
 .type-scale-img--max {
   height: 50%;
   width: auto;
+}
+
+.mobile-prototype-img {
+  height: 35rem;
+  width: auto;
+}
+
+.desktop-prototype-img {
+  height: 35rem;
+  width: auto;
+  margin: -1rem;
 }
 /* ----------------------- END PROJECTS ------------------ */
 
@@ -940,6 +955,17 @@ height: auto;
 
       .type-scale--max {
         display: none;
+      }
+
+      .mobile-prototype-img {
+        height: 40rem;
+        width: auto;
+      }
+      
+      .desktop-prototype-img {
+        height: 70rem;
+        width: auto;
+        margin-top: -10rem;
       }
       
 
