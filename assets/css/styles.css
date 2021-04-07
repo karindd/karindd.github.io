@@ -135,12 +135,18 @@ button::-moz-focus-inner {
 :root {
   --primary-color:#F17A5C;
   --secondary-color: #393938;
-  --primary-400:#F17A5C;
+  --tertiary-color: #fdf8f7;
   --space-travel: #FFA480;
-  --project-text: #FFA480;
-  --space-lg:0rem;
-  --space-md:0rem;
-  --primary-padding: 4.8rem;
+  --space-lg: 5.6rem;
+  --space-md: 4.8rem;
+  --space-sm: 2.4rem;
+  --space-xl: 6.4rem;
+  --body-lg-min: 1.8rem;
+  --body-md-min: 1.6rem;
+  --body-sm-min: 1.4rem;
+  --body-lg-max: 2.4rem;
+  --body-md-max: 1.8rem;
+  --body-sm-max: 1.4rem;
 }
 /* ----------------------- use "space" to define vertical rythm and color palettes (any value, --whatever) ------------------ */
 
@@ -160,7 +166,7 @@ h3 {
 }
 
 .h-color {
-  color: #F17A5C;
+  color: var(--primary-color);
 }
 
 h1 {
@@ -181,16 +187,20 @@ h3 {
   margin-bottom: 0.8rem;
 }
 
-body {
-  background-color: #fdf8f7;
-  font-family: 'Montserrat';
-  font-size: 1.6rem;
-  color: #393938;
-  line-height: 2.4rem;
-}
+.b-lg {
+  font-size: var(--body-lg-min) 
+  }
 
-.b-large {
-font-size: 2.4rem;
+  .b-sm {
+    font-size: var(--body-sm-min) 
+    }
+
+body {
+  background-color: var(--tertiary-color);
+  font-family: 'Montserrat';
+  font-size: var(--body-md-min) ;
+  color: var(--secondary-color);
+  line-height: 2.4rem;
 }
 
 p,
@@ -207,19 +217,19 @@ a:link {
 }
 
 a:link {
-  color: #e06343;
+  color: var(--primary-color);
 }
 
 a:visited {
-  color: #e06343;
+  color: var(--primary-color);
 }
 
 a:hover {
-  color: #393938;
+  color: var(--secondary-color);
 }
 
 .a:active {
-  color: #393938;
+  color: var(--secondary-color);
 }
 
 
@@ -249,6 +259,15 @@ a:hover {
   justify-content: space-between;
 }
 
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
 .align-end {
   align-items: flex-end;
 }
@@ -260,7 +279,6 @@ a:hover {
 .align-center {
   align-items: center;
 }
-
 
 .reverse {
   flex-flow: reverse;
@@ -286,9 +304,29 @@ a:hover {
   display: none;
 }
 
-.margin-bottom {
-  margin-bottom: 4.8rem;
+.margin-bottom--lg {
+  margin-bottom: var(--space-lg);
 } 
+
+.margin-bottom--md {
+  margin-bottom: var(--space-md);
+} 
+
+.margin-bottom--sm {
+  margin-bottom: var(--space-sm);
+  }
+
+  .margin-left {
+    margin-left: var(--space-md);
+    }
+
+    .margin-right {
+      margin-right: var(--space-md);
+      }
+
+  .column_container {
+   margin: 10rem;
+  }
 
 /* ----------------------- END UTILITIES ------------------ */
 
@@ -432,10 +470,11 @@ transform: scale(1.08);
 
  /* ----------------------- PROJECTS BILLBOARD ------------------ */
 
- .progress { position: fixed; top: 0; left: 0; height: 0.8rem; background-color: #393938; transition: all linear 0.1s; min-width: 0%; }
+ .progress { position: fixed; top: 0; left: 0; height: 0.8rem; background-color: var(--secondary-color);
+  ; transition: all linear 0.1s; min-width: 0%; }
 
  .billboard__h {
-  color: #fdf8f7;
+  color: var(--tertiary-color);
 }
 
 .billboard__p {
@@ -443,11 +482,11 @@ transform: scale(1.08);
 }
 
 .billboard__content__h {
-  color:#393938;
+  color: var(--secondary-color);
 }
 
 .billboard__text {
-  color: #fdf8f7;
+  color: var(--tertiary-color);
   margin: 6.4rem 2.4rem 6.4rem 2.4rem;
   width: 40%;
 }
@@ -495,22 +534,31 @@ margin: 4.8rem 0 4.8rem 0;
   width: 50%;
 }
 
-.project__section {
-  margin-bottom: 4.8rem;
-  }
+.column-left--padding {
+ padding-right: 4.8rem;
+}
 
-.margin-left {
-  margin-left: 4.8rem;
+.project__section {
+  margin-bottom: var(--space-md);
   }
 
 .colors__container {
-margin-bottom: 4.8rem;
+margin-bottom: var(--space-md);
 width: 100%;
 height: auto;
 }
 
 .typeface-img {
   width: 200%;
+}
+
+.type-scale--min {
+  display: none;
+}
+
+.type-scale-img--max {
+  height: 50%;
+  width: auto;
 }
 /* ----------------------- END PROJECTS ------------------ */
 
@@ -584,7 +632,7 @@ height: auto;
 /* ----------------------- FOOTER ------------------ */
 
 .footer {
-  background: #f17a5c;
+  background: var(--primary-color);
   min-height: 24rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -597,7 +645,7 @@ height: auto;
 
 .footer__content,
 .footer__title {
-  color: #fdf8f7;
+  color: var(--tertiary-color);
 }
 
 .footer__content {
@@ -610,20 +658,20 @@ height: auto;
 }
 
 .footer-anchor:link {
-  color: #fdf8f7;
+  color: var(--tertiary-color);
   text-decoration-line: underline;
 }
 
 .footer-anchor:visited {
-  color: #fdf8f7;
+  color: var(--tertiary-color);
 }
 
 .footer-anchor:hover {
-  color: #393938;
+  color: var(--secondary-color);
 }
 
 .footer-anchor:active {
-  color: #393938;
+  color: var(--secondary-color);
 }
 
 /* ----------------------- END FOOTER ------------------ */
@@ -651,9 +699,17 @@ height: auto;
   }
 
   body {
-    font-size: 1.8rem;
+    font-size: var(--body-md-max) ;
     line-height: 3.2rem;
   }
+
+  .b-lg {
+    font-size: var(--body-lg-max) 
+    }
+
+    .b-sm {
+      font-size: var(--body-sm-max) 
+      }
 
   .margin-bottom {
     margin-bottom: 4.8rem;
@@ -666,6 +722,10 @@ height: auto;
   .wrapper {
     max-width: 128rem;
     padding: 0 8.8rem;
+  }
+
+  .wrapper__project--min {
+    max-width: 192rem;
   }
 
   .wrapper--center-min {
@@ -822,11 +882,11 @@ height: auto;
       width: 100%;
       padding: 6.4rem 8.8rem 6.4rem;
       border-radius: 0 0 2rem 2rem;
-      margin-bottom:6.4rem;
+      margin-bottom: var(--space-xl);
     }
 
     .billboard__text {
-      color: #fdf8f7;
+      color: var(--tertiary-color);
       margin: 8.8rem 8.8rem 0 8.8rem;
       height: 70vh;
       width: 40%;
@@ -868,11 +928,20 @@ height: auto;
     margin-bottom: 8rem;
     }
 
-    .colors {
+    .colors__container {
       margin-bottom: 6.4rem;
       width: 100%;
       height: auto;
       }
+
+      .type-scale--min {
+        display: block;
+      }
+
+      .type-scale--max {
+        display: none;
+      }
+      
 
 /* ----------------------- END PROJECTS ------------------ */
 
