@@ -137,6 +137,7 @@ button::-moz-focus-inner {
   --secondary-color: #393938;
   --tertiary-color: #fdf8f7;
   --space-travel: #FFA480;
+  --masclans:#1765AC;
   --space-lg: 5.6rem;
   --space-md: 4.8rem;
   --space-sm: 2.4rem;
@@ -190,6 +191,11 @@ h3 {
 .b-lg {
   font-size: var(--body-lg-min) 
   }
+
+  .b-lg--bold {
+    font-size: var(--body-lg-min);
+    font-weight: 600;
+    }
 
 .b-sm {
     font-size: var(--body-sm-min) 
@@ -328,6 +334,10 @@ a:hover {
       margin-right: var(--space-md);
       }
 
+  .margin-top--md {
+    margin-top: var(--space-md);
+  }
+
   .column_container {
    margin: 10rem;
   }
@@ -445,6 +455,10 @@ font-size: 2.4rem;
  display: none;
 }
 
+.project {
+  margin-bottom: 8rem;
+}
+
 .project__bg {
   border-radius: 1rem;
     }
@@ -452,6 +466,11 @@ font-size: 2.4rem;
 .space-travel__bg {
       background-image: url(../img/space-travel/space-travel-bg.png);
     }
+
+.masclans__bg {
+  background: rgb(23,101,172);
+  background: linear-gradient(63deg, rgba(23,101,172,1) 0%, rgba(162,202,238,1) 100%);
+      }
 
 .zoom-effect-container {
   width: 100%;
@@ -576,6 +595,24 @@ height: auto;
 }
 /* ----------------------- END PROJECTS ------------------ */
 
+/* ----------------------- MASCLANS 1881 ------------------ */
+ul.project__ul--space-travel li::before {
+  color:#1765AC;
+}
+
+.billboard__parallax {
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.bg-color--masclans {
+  background-color: var(--masclans);
+}
+
+/* ----------------------- END 1881 ------------------ */
+
 /* ----------------------- SPACE TRAVEL ------------------ */
 
 .bg-color--space-travel {
@@ -586,7 +623,7 @@ ul.project__ul--space-travel li::before {
   color:var(--space-travel);
 }
 
-.billboard__bg--space-travel {
+.billboard-bg--space-travel {
   background-image: url("../img/space-travel/space-travel-bg.png");
   background-repeat: repeat;
   background-attachment: scroll;
@@ -594,7 +631,7 @@ ul.project__ul--space-travel li::before {
   border-radius: 0 0 3rem 3rem;
 }
 
-.billboard_mockup--space-travel {
+.billboard-mockup--space-travel {
   background-image: url("../img/space-travel/bg2.png");
   background-repeat: no-repeat;
   background-position: right 2.4rem bottom;
@@ -605,6 +642,10 @@ ul.project__ul--space-travel li::before {
 /* ----------------------- END SPACE TRAVEL ------------------ */
 
 /* ----------------------- LISTS ------------------ */
+
+ul.project__ul--billboard li::before {
+  color:var(--secondary-color);
+}
 
 ul.project__ul {
   list-style: none; /* Remove default bullets */
@@ -721,6 +762,10 @@ height: auto;
     font-size: var(--body-lg-max) 
     }
 
+    .b-lg--bold {
+      font-size: var(--body-lg-max);
+      }
+
     .b-sm {
       font-size: var(--body-sm-max) 
       }
@@ -760,12 +805,6 @@ height: auto;
 
   .reverse-min {
     flex-flow: reverse;
-  }
-
-  .row-min {
-    align-items: flex-start;
-    display: flex;
-    width: 100%;
   }
 
   .space-between {
@@ -872,6 +911,10 @@ height: auto;
   }
 
   .project__bg {
+    border-radius: 1rem;
+      }
+
+  .project__bg {
     border-radius: 4rem;
       }
 
@@ -887,6 +930,15 @@ height: auto;
 .billboard__content--column-left {
   width: 50%;
   margin-left: 4.8rem;
+}
+
+.billboard__row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: var(--space-sm);
 }
 
 .project__mockup {
@@ -910,7 +962,6 @@ height: auto;
       width: 40%;
     }
     
-
 /* ----------------------- END PROJECTS BILLBOARD ------------------ */
 
 /* ----------------------- PROJECTS ------------------ */
@@ -922,6 +973,13 @@ height: auto;
 
   .project__img {
       display: none;
+      }
+
+.img-row--min{
+        align-items: flex-start;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
       }
 
   .content__container {
@@ -940,7 +998,6 @@ height: auto;
           padding: 0 4.8rem 0 2.4rem;
           width: 50%;
         }
-        
 
   .project__section {
     margin-bottom: 8rem;
@@ -952,31 +1009,35 @@ height: auto;
       height: auto;
       }
 
-      .type-scale--min {
+  .type-scale--min {
         display: block;
       }
 
-      .type-scale--max {
+  .type-scale--max {
         display: none;
       }
 
-      .mobile-prototype-img {
+  .mobile-prototype-img {
         height: 40rem;
         width: auto;
       }
       
-      .desktop-prototype-img {
+  .desktop-prototype-img {
         height: 70rem;
         width: auto;
         margin-top: -10rem;
       }
       
+  .small-img {
+        width:50rem;
+        height: auto;
+      }
 
 /* ----------------------- END PROJECTS ------------------ */
 
 /* ----------------------- SPACE TRAVEL ------------------ */
 
-.billboard__bg--space-travel {
+.billboard-bg--space-travel {
     background-image: url("../img/space-travel/space-travel-bg.png");
     background-repeat: repeat;
     background-attachment: fixed;
@@ -984,7 +1045,7 @@ height: auto;
     border-radius: 0 0 3rem 3rem;
   }
   
-  .billboard_mockup--space-travel {
+  .billboard-mockup--space-travel {
     background-image: url("../img/space-travel/bg2.png");
     background-repeat: no-repeat;
     background-position: right 8.8rem bottom;
