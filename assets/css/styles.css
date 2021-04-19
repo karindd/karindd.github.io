@@ -493,8 +493,13 @@ transform: scale(1.08);
 
  /* ----------------------- PROJECTS BILLBOARD ------------------ */
 
- .progress { position: fixed; top: 0; left: 0; height: 0.8rem; background-color: var(--secondary-color);
-  ; transition: all linear 0.1s; min-width: 0%; }
+ .progress { position: fixed; 
+  top: 0; 
+  left: 0; 
+  height: 0.8rem; 
+  background-color: var(--secondary-color);
+  transition: all linear 0.1s; min-width: 0%;
+z-index: 10; }
 
  .billboard__h {
   color: var(--tertiary-color);
@@ -592,6 +597,22 @@ height: auto;
 .desktop-prototype-img {
   margin: -1rem;
   object-fit: cover;
+}
+
+.iframe_container {
+}
+
+.prototype {
+  -ms-zoom: 0.75;
+        -moz-transform: scale(0.75);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.75);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.75);
+        -webkit-transform-origin: 0 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
 }
 /* ----------------------- END PROJECTS ------------------ */
 
