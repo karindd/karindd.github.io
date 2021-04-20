@@ -531,6 +531,22 @@ transform: scale(1.08);
 
 /* ----------------------- PROJECTS ------------------ */
 
+.box-shadow {
+  box-shadow:
+  0 1.2px 5px rgba(0, 0, 0, 0.04),
+  0 2.9px 11.9px rgba(0, 0, 0, 0.028),
+  0 5.4px 22.4px rgba(0, 0, 0, 0.023),
+  0 9.6px 40px rgba(0, 0, 0, 0.019),
+  0 18px 74.8px rgba(0, 0, 0, 0.016),
+  0 43px 179px rgba(0, 0, 0, 0.011)
+;
+ border-radius:3rem;
+}
+
+.sub-section {
+  margin-bottom: var(--space-lg);
+}
+
 .project__img {
 margin: 0 0 3.2rem 0;
 }
@@ -1018,6 +1034,10 @@ height: auto;
   .project__img {
       display: none;
       }
+
+      .img-shadow {
+  margin: -12rem 0 -8rem 0;
+}
 
 .img-row--min{
         align-items: flex-start;
