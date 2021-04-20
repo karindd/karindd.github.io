@@ -137,7 +137,7 @@ button::-moz-focus-inner {
   --secondary-color: #393938;
   --tertiary-color: #fdf8f7;
   --space-travel: #FFA480;
-  --masclans:#1765AC;
+  --masclans:#F2EAD9;
   --space-lg: 5.6rem;
   --space-md: 4.8rem;
   --space-sm: 2.4rem;
@@ -361,6 +361,7 @@ a:hover {
 .logo {
   width: 100%;
   letter-spacing: 0.4rem;
+  text-transform: uppercase;
 }
 
 /* ----------------------- END HEADER ------------------ */
@@ -499,7 +500,7 @@ transform: scale(1.08);
   height: 0.8rem; 
   background-color: var(--secondary-color);
   transition: all linear 0.1s; min-width: 0%;
-z-index: 10; }
+  z-index: 10; }
 
  .billboard__h {
   color: var(--tertiary-color);
@@ -590,7 +591,7 @@ height: auto;
 }
 
 .mobile-prototype-img {
-  height: 35rem;
+  max-height: 35rem;
   width: auto;
 }
 
@@ -617,6 +618,8 @@ height: auto;
 /* ----------------------- END PROJECTS ------------------ */
 
 /* ----------------------- MASCLANS 1881 ------------------ */
+
+
 ul.project__ul--space-travel li::before {
   color:#1765AC;
 }
@@ -626,6 +629,14 @@ ul.project__ul--space-travel li::before {
   background-attachment: scroll;
   background-size: cover;
   border-radius: 0 0 3rem 3rem;
+}
+
+.billboard-mockup--masclans {
+  background-image: url("../img/masclans/bg2.png");
+  background-repeat: no-repeat;
+  background-position: right 2.4rem bottom -1rem;
+  background-attachment: scroll;
+  background-size: 40%;
 }
 
 .bg-color--masclans {
@@ -655,7 +666,7 @@ ul.project__ul--space-travel li::before {
 .billboard-mockup--space-travel {
   background-image: url("../img/space-travel/bg2.png");
   background-repeat: no-repeat;
-  background-position: right 2.4rem bottom;
+  background-position: right 2.4rem bottom -1rem;
   background-attachment: scroll;
   background-size: 40%;
 }
@@ -752,6 +763,18 @@ height: auto;
 
 /* ----------------------- END FOOTER ------------------ */
 
+/* ----------------------- RESPONSIVE 768px ------------------ */
+@media (min-width: 48em) {
+
+.billboard-mockup--space-travel {
+  background-image: url("../img/space-travel/bg2.png");
+  background-repeat: no-repeat;
+  background-position: right 2.4rem top 5rem;
+  background-attachment: scroll;
+  background-size: 40%;
+}
+}
+/* ----------------------- END RESPONSIVE 768px ------------------ */
 
 /* ----------------------- RESPONSIVE 960px ------------------ */
 @media (min-width: 60em) {
@@ -1039,7 +1062,7 @@ height: auto;
       }
 
   .mobile-prototype-img {
-        height: 40rem;
+        max-height: 40rem;
         width: auto;
       }
       
