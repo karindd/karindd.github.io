@@ -540,7 +540,7 @@ transform: scale(1.08);
   0 18px 74.8px rgba(0, 0, 0, 0.016),
   0 43px 179px rgba(0, 0, 0, 0.011)
 ;
- border-radius:3rem;
+ border-radius:2rem;
 }
 
 .sub-section {
@@ -1093,8 +1093,13 @@ height: auto;
       }
       
   .small-img {
-        width:50rem;
+        max-width:50rem;
         height: auto;
+      }
+
+      .medium-img {
+        max-height: 70rem;
+        width: auto;
       }
 
 /* ----------------------- END PROJECTS ------------------ */
