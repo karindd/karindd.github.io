@@ -327,7 +327,7 @@ margin-bottom: var(--space-xxl);
 } 
 
 .margin-bottom--md {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 } 
 
 .margin-bottom--sm {
@@ -555,6 +555,14 @@ transform: scale(1.08);
   margin-bottom:4.8rem;
 }
 
+.billboard__row,
+.billboard__content--column-left,
+.billboard__content--column-right {
+  margin-bottom: var(--space-sm);
+}
+
+
+
 /* ----------------------- END PROJECTS BILLBOARD ------------------ */
 
 /* ----------------------- PROJECTS ------------------ */
@@ -652,6 +660,12 @@ height: auto;
 .desktop-prototype-img {
   margin: -1rem;
   object-fit: cover;
+}
+
+.project-end {
+  background-size: cover;
+  background-color: var(--masclans);
+padding: 4.8rem 0 2.4rem 0;
 }
 /* ----------------------- END PROJECTS ------------------ */
 
@@ -969,6 +983,11 @@ height: auto;
     margin-bottom: var(--space-xl);
   } 
 
+  .margin-bottom--md {
+    margin-bottom: var(--space-md);
+  } 
+  
+
   .margin-left--min {
     margin-left: var(--space-md);
     }
@@ -1044,11 +1063,13 @@ height: auto;
 .billboard__content--column-right {
   width: 50%;
   margin-right: 8.8rem;
+  margin-bottom: 0rem;
 }
 
 .billboard__content--column-left {
   width: 50%;
   margin-left: 4.8rem;
+  margin-bottom: 0rem;
 }
 
 .billboard__row {
@@ -1069,7 +1090,7 @@ height: auto;
 
     .billboard__content {
       width: 100%;
-      padding: 6.4rem 4.8rem 2.4rem;
+      padding: 6.4rem 8.8rem 4.8rem;
       border-radius: 0 0 2rem 2rem;
       margin-bottom: var(--space-xl);
     }
