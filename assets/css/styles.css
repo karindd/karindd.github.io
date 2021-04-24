@@ -316,12 +316,21 @@ a:hover {
   display: none;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
   /* ----------------------- MARGIN ------------------ */
 
 
   .margin-bottom--xxl{
 margin-bottom: var(--space-xxl);
   }
+
+  .margin-bottom--xl{
+    margin-bottom: var(--space-xl);
+      }
+    
 
 .margin-bottom--lg {
   margin-bottom: var(--space-lg);
