@@ -133,11 +133,13 @@ button::-moz-focus-inner {
 /* ----------------------- VARIABLES ------------------ */
 
 :root {
-  --primary-color:#F17A5C;
-  --secondary-color: #393938;
-  --tertiary-color: #fdf8f7;
-  --space-travel: #FFA480;
+  --primary-color:#E46341;
+  --secondary-color: #40352D;
+  --tertiary-color: #FFFBF8;
+  --quaternary-color:#F97755;
+  --space-travel: #FDBD8B;
   --masclans:#F2EAD9;
+  --footer:#FFEDE0;
   --space-xxl: 9.6rem;
   --space-xl: 8.8rem;
   --space-lg: 5.6rem;
@@ -238,7 +240,6 @@ a:hover {
 .a:active {
   color: var(--secondary-color);
 }
-
 
 /* ----------------------- UTILITIES ------------------ */
 
@@ -391,11 +392,44 @@ margin-bottom: var(--space-xxl);
   text-transform: uppercase;
 }
 
+.logo-link:link {
+  color: var(  --quaternary-color);
+}
+.logo-link:visited {
+  color: var(  --quaternary-color);
+}
+.logo-link:hover {
+  color: var(  --quaternary-color);
+}
+.logo-link:active {
+  color: var(  --quaternary-color);
+}
+
+
+.nav-link:link {
+  color: var(--secondary-color);
+}
+
+.nav-link:visited {
+  color: var(--secondary-color);
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link:active {
+  color: var(--primary-color);
+}
+
 /* ----------------------- END HEADER ------------------ */
 
 
 /* ----------------------- NAVIGATION ------------------ */
 
+.nav-text {
+  color: var(--secondary-color);
+}
 .navigation-min {
   display: none;
 }
@@ -688,14 +722,14 @@ ul.project__ul--masclans li::before {
   background-repeat: no-repeat;
   background-position: right 2.4rem bottom -1rem;
   background-attachment: scroll;
-  background-size: 40%;
+  background-size: 45%;
 }
 
 .bg-color--masclans {
   background-color: var(--masclans);
 }
 
-/* ----------------------- END 1881 ------------------ */
+/* ----------------------- END MASCLANS 1881 ------------------ */
 
 /* ----------------------- SPACE TRAVEL ------------------ */
 
@@ -756,7 +790,7 @@ li {
 /* ----------------------- NEXT PROJECT ------------------ */
 
 .next-project {
-  background-color: #D9CDC7;
+  background-color:var(--footer);
   height: 100%;
   padding: 8.8rem 0 8.8rem 0;
 }
@@ -771,7 +805,7 @@ height: auto;
 /* ----------------------- FOOTER ------------------ */
 
 .footer {
-  background: var(--primary-color);
+  background: var(--footer);
   min-height: 24rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -784,7 +818,7 @@ height: auto;
 
 .footer__content,
 .footer__title {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 .footer__content {
@@ -797,12 +831,11 @@ height: auto;
 }
 
 .footer-anchor:link {
-  color: var(--tertiary-color);
-  text-decoration-line: underline;
+  color: var(--primary-color);
 }
 
 .footer-anchor:visited {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 .footer-anchor:hover {
@@ -947,11 +980,10 @@ height: auto;
   .column-min {
     width: 50%;
   }
-
    
   .parragraph-min {
     display: block;
-  }medium-img
+  }
 
   .parragraph-max {
     display: none;
@@ -1009,14 +1041,20 @@ height: auto;
   .hamburger-menu {
     display: none;
   }
+
   .navigation {
     display: none;
   }
+
   .navigation-min {
     width: 50%;
     display: flex;
     justify-content: flex-end;
   }
+
+.nav-link:link {
+  color: var(--secondary-color);
+}
 
   .nav-item {
     padding: 0 2rem;
@@ -1209,6 +1247,19 @@ height: auto;
       }
 
 /* ----------------------- END PROJECTS ------------------ */
+
+/* ----------------------- MASCLANS ------------------ */
+
+.billboard-mockup--masclans {
+  background-image: url("../img/masclans/bg2.png");
+  background-repeat: no-repeat;
+  background-position: right 8.8rem bottom;
+  background-attachment: fixed;
+  background-size: 35%;
+}
+
+/* ----------------------- END ------------------ */
+
 
 /* ----------------------- SPACE TRAVEL ------------------ */
 
