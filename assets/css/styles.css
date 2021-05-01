@@ -139,6 +139,7 @@ button::-moz-focus-inner {
   --quaternary-color:#F97755;
   --space-travel: #FDBD8B;
   --masclans:#F2EAD9;
+  --fri-apparel:#E5DED8;
   --footer:#FFEDE0;
   --space-xxl: 9.6rem;
   --space-xl: 8.8rem;
@@ -544,6 +545,11 @@ font-size: 2.4rem;
   background: linear-gradient(63deg, rgba(23,101,172,1) 0%, rgba(162,202,238,1) 100%);
       }
 
+.fri__bg {
+background: rgb(106,137,87);
+background: linear-gradient(63deg, rgba(106,137,87,1) 0%, rgba(190,211,177,1) 100%);
+}
+
 .zoom-effect-container {
   width: 100%;
   height: 100%;
@@ -571,7 +577,16 @@ transform: scale(1.08);
   height: 0.8rem; 
   background-color: var(--secondary-color);
   transition: all linear 0.1s; min-width: 0%;
-  z-index: 10; }
+  z-index: 10; 
+}
+
+
+  .billboard__parallax {
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    border-radius: 0 0 3rem 3rem;
+  }
 
  .billboard__h {
   color: var(--tertiary-color);
@@ -650,6 +665,13 @@ background-size: cover;
 margin: 4.8rem 0 4.8rem 0;
 }
 
+.content__container-sm {
+  padding: 2.4rem;
+  border-radius: 2rem;
+  margin: 4.8rem 0 4.8rem 0;
+  }
+  
+
 .content__container--column-right {
   padding: 0 1.6rem 0 2.4rem;
   width: 50%;
@@ -702,11 +724,6 @@ height: auto;
   object-fit: cover;
 }
 
-.project-end {
-  background-size: cover;
-  background-color: var(--masclans);
-padding: 4.8rem 0 4rem 0;
-}
 /* ----------------------- END PROJECTS ------------------ */
 
 /* ----------------------- MASCLANS 1881 ------------------ */
@@ -714,13 +731,6 @@ padding: 4.8rem 0 4rem 0;
 
 ul.project__ul--masclans li::before {
   color:#C2A97A;
-}
-
-.billboard__parallax {
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  border-radius: 0 0 3rem 3rem;
 }
 
 .billboard-mockup--masclans {
@@ -735,7 +745,33 @@ ul.project__ul--masclans li::before {
   background-color: var(--masclans);
 }
 
+.project-end {
+  background-size: cover;
+  background-color: var(--masclans);
+padding: 4.8rem 0 4rem 0;
+}
+
 /* ----------------------- END MASCLANS 1881 ------------------ */
+
+/* ----------------------- FRI APPAREL ------------------ */
+
+
+ul.project__ul--fri li::before {
+  color:#C2A97A;
+}
+.bg-color--fri {
+  background-color: var(--fri-apparel);
+}
+
+.billboard-mockup--fri {
+  background-image: url("../img/masclans/bg2.png");
+  background-repeat: no-repeat;
+  background-position: right 2.4rem bottom -1rem;
+  background-attachment: scroll;
+  background-size: 45%;
+}
+
+/* ----------------------- END FRI APPAREL ------------------ */
 
 /* ----------------------- SPACE TRAVEL ------------------ */
 
@@ -1174,11 +1210,10 @@ height: auto;
         justify-content: space-around;
       }
 
-      .content__container--full {
+  .content__container--full {
         background-size: cover;
       }
   
-
   .content__container {
       padding: 5.6rem;
       border-radius: 2rem;
@@ -1263,8 +1298,19 @@ height: auto;
   background-size: 35%;
 }
 
-/* ----------------------- END ------------------ */
+/* ----------------------- END MASCLANS ------------------ */
 
+/* ----------------------- FRI APPAREL ------------------ */
+
+.billboard-mockup--fri {
+  background-image: url("../img/masclans/bg2.png");
+  background-repeat: no-repeat;
+  background-position: right 8.8rem bottom;
+  background-attachment: fixed;
+  background-size: 35%;
+}
+
+/* ----------------------- END FRI APPAREL ------------------ */
 
 /* ----------------------- SPACE TRAVEL ------------------ */
 
