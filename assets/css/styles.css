@@ -872,6 +872,7 @@ li {
   border-radius: 5rem;
 }
 
+.button-large:hover,
 .button:hover {opacity:0.8;}
 
 /* ----------------------- END BUTTON ------------------ */
