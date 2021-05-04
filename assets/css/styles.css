@@ -1092,6 +1092,10 @@ height: auto;
     width: 70%;
   }
 
+  .hide-max {
+    display: block;
+  }
+
     /* ----------------------- MARGINS ------------------ */
 
 
