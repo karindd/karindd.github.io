@@ -321,6 +321,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.hide-max {
+  display: none;
+}
+
   /* ----------------------- MARGIN ------------------ */
 
 
@@ -748,7 +752,7 @@ ul.project__ul--masclans li::before {
 .project-end {
   background-size: cover;
   background-color: var(--masclans);
-padding: 4.8rem 0 4rem 0;
+padding: 8rem 0 8rem 0;
 }
 
 /* ----------------------- END MASCLANS 1881 ------------------ */
@@ -840,10 +844,26 @@ li {
   background-color: #F97755;
   border: none;
   color: var(--tertiary-color);
+  padding: 0.8rem 2.4rem;
+  text-align: center;
+  font-size: 1.6rem;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5rem;
+  margin: auto;
+}
+
+.button-large {
+  margin: 2.4rem;
+  background-color: #F97755;
+  border: none;
+  color: var(--tertiary-color);
   padding: 1.6rem 3.2rem;
   text-align: center;
   font-size: 1.6rem;
-  margin: 0.4rem 0.2rem;
   opacity: 1;
   transition: 0.3s;
   display: inline-block;
@@ -1031,6 +1051,11 @@ height: auto;
     display: none;
   }
 
+  .hide-min {
+    display: none;
+  }
+
+
   .inline {
     display: inline-block;
   }
@@ -1102,6 +1127,27 @@ height: auto;
       /* ----------------------- END MARGINS ------------------ */
 
   /* ----------------------- END UTILITIES ------------------ */
+
+    /* ----------------------- BUTTON ------------------ */
+
+
+  .button {
+    background-color: #F97755;
+    border: none;
+    color: var(--tertiary-color);
+    padding: 1.6rem 3.2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5rem;
+    margin: auto;
+  }
+
+      /* ----------------------- END BUTTON ------------------ */
 
   /* ----------------------- HEADER ------------------ */
 
@@ -1240,7 +1286,7 @@ height: auto;
       }
   
   .content__container {
-      padding: 5.6rem;
+      padding: 6.4rem;
       border-radius: 2rem;
         }
         
