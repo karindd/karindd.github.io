@@ -135,7 +135,7 @@ button::-moz-focus-inner {
   --primary-color:#E46341;
   --secondary-color: #40352D;
   --tertiary-color: #FFFBF8;
-  --quaternary-color:#F97755;
+  --quaternary-color:#F97755; 
   --space-travel: #FDBD8B;
   --masclans:#F2EAD9;
   --fri-apparel:#E5DED8;
@@ -531,8 +531,7 @@ font-size: 2.4rem;
 }
 
 .project {
-  margin-bottom: 12.8rem;
-  margin-top: var(--space-xxl);
+  margin-bottom: 9.6rem;
 }
 
 .project__bg {
@@ -751,6 +750,7 @@ ul.project__ul--masclans li::before {
   background-size: cover;
   background-color: var(--masclans);
 padding: 8rem 0 8rem 0;
+margin-top: var(--space-md);
 }
 
 /* ----------------------- END MASCLANS 1881 ------------------ */
@@ -837,37 +837,29 @@ li {
 
 /* ----------------------- BUTTON ------------------ */
 
+.button,
+.button-large {
+  background-color: var(--quaternary-color);
+  color: var(--tertiary-color);
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  opacity: 1;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  border: none;
+}
 
 .button {
-  background-color: #F97755;
-  border: none;
-  color: var(--tertiary-color);
   padding: 0.8rem 2.4rem;
-  text-align: center;
-  font-size: 1.6rem;
-  opacity: 1;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 5rem;
   margin: auto;
 }
 
 .button-large {
   margin: 2.4rem;
-  background-color: #F97755;
-  border: none;
-  color: var(--tertiary-color);
   padding: 1.6rem 3.2rem;
-  text-align: center;
-  font-size: 1.6rem;
-  opacity: 1;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 5rem;
 }
 
 .button-container {
@@ -1221,6 +1213,10 @@ height: auto;
 
   .project__bg {
     border-radius: 4rem;
+      }
+
+      .project {
+        margin-bottom: 12.8rem;
       }
 
 /* ----------------------- END HOME ------------------ */
