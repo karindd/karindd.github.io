@@ -242,6 +242,10 @@ a:hover {
   color: var(--secondary-color);
 }
 
+.section-title {
+  margin-bottom: var(--space-md);
+}
+
 /* ----------------------- UTILITIES ------------------ */
 
 .wrapper {
@@ -990,7 +994,7 @@ height: auto;
     .b-sm {
       font-size: var(--body-sm-max) 
       }
-
+      
   /* ----------------------- END GLOBAL ------------------ */
 
   /* ----------------------- UTILITIES ------------------ */
