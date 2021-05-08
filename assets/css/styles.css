@@ -166,7 +166,7 @@ html {
 h1,
 h2,
 h3 {
-  font-family: 'DM SerifDisplay';
+  font-family: 'DM SerifDisplay', Garamond, serif;
   color: var(--secondary-color);
 }
 
@@ -207,7 +207,7 @@ h3 {
 
 body {
   background-color: var(--tertiary-color);
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: var(--body-md-min) ;
   color: var(--secondary-color);
   line-height: 2.4rem;
@@ -473,8 +473,7 @@ font-size: 2.4rem;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: var(--secondary-color);
   overflow-x: hidden;
   transition: 0.25s;
 }
@@ -497,7 +496,7 @@ font-size: 2.4rem;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: var(--tertiary-color);
 }
 
 .overlay .closebtn {
@@ -583,7 +582,6 @@ transform: scale(1.08);
   transition: all linear 0.1s; min-width: 0%;
   z-index: 10; 
 }
-
 
   .billboard__parallax {
     background-repeat: repeat;
@@ -872,6 +870,14 @@ li {
   border-radius: 5rem;
 }
 
+.button-container {
+  display: flex;
+  flex-flow: wrap;
+  text-align: center;
+  white-space: nowrap;
+  justify-content: center;
+}
+
 .button-large:hover,
 .button:hover {opacity:0.8;}
 
@@ -1152,6 +1158,11 @@ height: auto;
     margin: auto;
   }
 
+
+
+.button-large {
+  margin:var(--space-xl);
+}
       /* ----------------------- END BUTTON ------------------ */
 
   /* ----------------------- HEADER ------------------ */
